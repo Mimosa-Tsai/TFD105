@@ -1,65 +1,6 @@
-@import url("reset.css");
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 1440px;
-  box-sizing: border-box;
-  font-family: Arial, Verdana, "微軟正黑體";
-  font-size: 18px;
-  text-align: center;
-  background-color: #fefae0;
-}
-
-/* ---頁首選單區塊--- */
-
-header {
-  width: 100%;
-  height: 80px;
-  padding: 5px 0;
-  background-color: #fffdf0;
-
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-header img {
-  width: 160px;
-}
-
-header nav {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-}
-
-header ul {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-header li {
-  margin-left: 30px;
-}
-
-header li a {
-  font-weight: bolder;
-  text-decoration: none;
-  color: #6b705c;
-}
-
-header li a:hover {
-  /* color: #FFCB69; */
-  text-decoration: underline;
-}
-
-header li .selected {
-  color: #ffcb69;
-}
+@import url("base.css");
+@import url("header.css");
+@import url("footer.css");
 
 /* ---主要內容區塊--- */
 
@@ -262,35 +203,4 @@ main #room_three::before {
 
 /* ---主要內容區塊結束--- */
 
-/* ---頁尾--- */
 
-footer {
-  height: 200px;
-  background-color: #ccd5ae;
-  text-align: center;
-  line-height: 1.5;
-  font-weight: 700;
-  color: #fff;
-}
-
-footer .social_icon {
-  padding-top: 40px;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer img {
-  width: 35px;
-  padding: 0 5px;
-}
-
-footer h2 {
-  font-size: 15px;
-}
-
-footer h3 {
-  font-size: 13px;
-  padding-top: 20px;
-}

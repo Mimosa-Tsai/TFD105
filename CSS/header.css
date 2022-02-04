@@ -1,0 +1,48 @@
+/* ---頁首選單區塊--- */
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 5px 0;
+  background-color: #fffdf0;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header img {
+  width: 160px;
+}
+
+header nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  margin-left: 30px;
+}
+
+header li a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #6b705c;
+}
+
+header li a:hover {
+  /* color: #FFCB69; */
+  text-decoration: underline;
+}
+
+header li .selected {
+  color: #ffcb69;
+}

@@ -1,13 +1,5 @@
-@import url("reset.css");
-
-body {
-  width: 1440px;
-  box-sizing: border-box;
-  font-family: Arial, Verdana, "微軟正黑體";
-  font-size: 18px;
-  text-align: center;
-  background-color: #fefae0;
-}
+@import url("base.css");
+@import url("footer.css");
 
 /* --- 頁首 --- */
 header {
@@ -174,35 +166,3 @@ nav .home_btn:hover {
   flex-grow: 5;
 }
 
-/* ---頁尾--- */
-footer {
-  height: 200px;
-  background-color: #ccd5ae;
-
-  text-align: center;
-  line-height: 1.5;
-  font-weight: 700;
-  color: #fff;
-}
-
-footer .social_icon {
-  padding-top: 40px;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer img {
-  width: 35px;
-  padding: 0 5px;
-}
-
-footer h2 {
-  font-size: 15px;
-}
-
-footer h3 {
-  font-size: 13px;
-  padding-top: 20px;
-}

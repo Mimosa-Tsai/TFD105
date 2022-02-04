@@ -1,0 +1,32 @@
+/* ---頁尾--- */
+
+footer {
+  height: 200px;
+  background-color: #ccd5ae;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .social_icon {
+  padding-top: 40px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  width: 35px;
+  padding: 0 5px;
+}
+
+footer h2 {
+  font-size: 15px;
+}
+
+footer h3 {
+  font-size: 13px;
+  padding-top: 20px;
+}
