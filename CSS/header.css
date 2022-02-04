@@ -11,38 +11,57 @@ header {
   z-index: 1;
 }
 
-header img {
-  width: 160px;
-}
-
 header nav {
   width: 1200px;
   margin: 0 auto;
   display: flex;
 }
 
-header ul {
+header nav img {
+  width: 160px;
+}
+
+header nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-header li {
+header nav ul li {
   margin-left: 30px;
 }
 
-header li a {
+header nav ul li a {
+  position: relative;
   font-weight: bolder;
   text-decoration: none;
   color: #6b705c;
 }
 
-header li a:hover {
-  /* color: #FFCB69; */
-  text-decoration: underline;
+header nav ul li a::after {
+  content: "";
+  display: block;
+  background-color: #6b705c;
+  width: 0;
+  height: 0.125rem;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+  margin: auto;
+  transition: width 0.4s ease;
 }
 
-header li .selected {
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+header nav ul li a.selected {
   color: #ffcb69;
+}
+
+header nav ul li a.selected::after {
+  background-color: #ffcb69;
 }
