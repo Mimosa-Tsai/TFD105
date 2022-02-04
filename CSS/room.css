@@ -1,0 +1,273 @@
+@import url("reset.css");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 1440px;
+  font-family: Arial, Verdana, "微軟正黑體";
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fefae0;
+  text-decoration: none;
+}
+
+/* ---頁首選單區塊--- */
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 5px 0;
+  background-color: #fffdf0;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header img {
+  width: 160px;
+}
+
+header nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  margin-left: 30px;
+}
+
+header li a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #6b705c;
+}
+
+header li a:hover {
+  /* color: #FFCB69; */
+  text-decoration: underline;
+}
+
+header li .selected {
+  color: #ffcb69;
+}
+
+/* ---主要內容區塊--- */
+
+main .header {
+  width: 100%;
+  height: 90px;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---房型選單--- */
+
+main .room_icon {
+  position: fixed;
+  top: 120px;
+  right: 5px;
+}
+
+main .room_icon li {
+  width: 60px;
+  height: 60px;
+  background-color: #ccd5ae;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+main .room_icon a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 60px;
+  color: #fff;
+}
+
+main .room_icon li:hover{
+    background-color: #A5A58D;
+}
+
+/* ---圖文區塊--- */
+
+main .room {
+  padding: 7rem 0;
+  display: flex;
+}
+
+main .room:nth-of-type(1) {
+  padding: 6rem 0 7rem 0;
+  display: flex;
+}
+
+main .room_text {
+  width: 700px;
+  text-align: left;
+  padding: 0 20px 20px 0;
+}
+
+main .room_text h2 {
+  color: #463f3a;
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+main .room_text p {
+  color: #6b705c;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+main table {
+  width: 500px;
+  border: 1.5px solid #6b705c;
+  table-layout: fixed;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+main table .tr1 {
+  background-color: #ccd5ae;
+  color: #6b705c;
+}
+
+main table td {
+  color: #6b705c;
+  border: 1px solid #6b705c;
+  text-align: center;
+  font-weight: bolder;
+}
+
+main .ps {
+  margin-left: 20px;
+  list-style: circle;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #6b705c;
+}
+
+main .room_pic img {
+  width: 500px;
+}
+
+main .room .room_text:nth-of-type(2) {
+  padding-left: 50px;
+}
+
+main .room .room_btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+main .room .room_btn a {
+    margin-right: 10px;
+    display: block;
+    width: 100px;
+    line-height: 30px;
+
+    color: #6b705c;
+
+    border: 1.5px solid #A5A58D;
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+}
+
+main .room .room_btn a:hover {
+    background-color: #A5A58D;
+    color: #fff;
+}
+
+/* ---裝飾線--- */
+
+main #room_two {
+  position: relative;
+}
+
+main #room_three {
+  position: relative;
+}
+
+main #room_two::before {
+  content: "";
+  display: block;
+  background-color: #ccd5ae;
+  width: 1000px;
+  height: 2px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+main #room_three::before {
+  content: "";
+  display: block;
+  background-color: #ccd5ae;
+  width: 1000px;
+  height: 2px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* ---主要內容區塊結束--- */
+
+/* ---頁尾--- */
+
+footer {
+  height: 200px;
+  background-color: #ccd5ae;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .social_icon {
+  padding-top: 40px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  width: 35px;
+  padding: 0 5px;
+}
+
+footer h2 {
+  font-size: 15px;
+}
+
+footer h3 {
+  font-size: 13px;
+  padding-top: 20px;
+}
