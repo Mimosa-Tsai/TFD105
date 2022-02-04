@@ -1,209 +1,208 @@
-@import url('reset.css');
+@import url("reset.css");
 
-body{
-    width: 1440px;
-    font-family: Arial, Verdana, '微軟正黑體';
-    font-size: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    background-color: #fefae0;
+body {
+  width: 1440px;
+  box-sizing: border-box;
+  font-family: Arial, Verdana, "微軟正黑體";
+  font-size: 18px;
+  text-align: center;
+  background-color: #fefae0;
 }
 
 /* --- 頁首 --- */
-header{
-    background-image: url('../image/big_pic/home01.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 960px;
+header {
+  background-image: url("../image/big_pic/home01.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 960px;
 }
 
-header .logo_pic{
-    width: 160px;
-    margin: 0 auto;
-    padding-top: 50px;
+header .logo_pic {
+  width: 160px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-
 
 /* --- 主要內容區塊 --- */
-main{
-    width: 1200px;
-    margin: 0 auto;
+main {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.home_text{
-    text-align: center;
-    line-height: 1.5;
-    font-size: 28px;
-    font-weight: bolder;
+.home_text {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
 nav {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-nav h2{
-    font-weight: bolder;
-    color: #463f3a;
+nav h2 {
+  font-weight: bolder;
+  color: #463f3a;
 }
 
-nav h3{
-    font-size: 20px;
-    padding: 10px 0;
-    color: #6B705C;
+nav h3 {
+  font-size: 20px;
+  padding: 10px 0;
+  color: #6b705c;
 }
 
-nav ul{
-    width: 80%;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 20px;
+nav ul {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
-nav ul li{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
 }
 
-nav img{
-    width: 200px;
-    border-radius: 50%;
-    opacity: .5;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
-    transition: .5s;
+nav img {
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.5;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
-nav img:hover{
-    opacity: 1;
+nav img:hover {
+  opacity: 1;
 }
 
-nav p{
-    line-height: 2.5;
-    font-weight: 700;
-    color: #463f3a;
+nav p {
+  line-height: 2.5;
+  font-weight: 700;
+  color: #463f3a;
 }
 
-nav .home_btn{
-    width: 30%;
-    border: 2px solid #A5A58D;
-    border-radius: 20px;
-    font-family: Arial;
-    font-size: 16px;
-    line-height: 1.2;
-    color: #6B705C;
-    margin: 0 auto;
+nav .home_btn {
+  width: 30%;
+  border: 2px solid #a5a58d;
+  border-radius: 20px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #6b705c;
+  margin: 0 auto;
 }
 
-nav .home_btn:hover{
-    background-color: #A5A58D;
-    color: #fff;
+nav .home_btn:hover {
+  background-color: #a5a58d;
+  color: #fff;
 }
 
 /* ---四季圖片區塊--- */
-.season::before{
-    content: '';
-    display: block;
-    background-color: #ccd5ae;
-    width: 1000px;
-    height: 2px;
+.season::before {
+  content: "";
+  display: block;
+  background-color: #ccd5ae;
+  width: 1000px;
+  height: 2px;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.season{
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.season {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.season h2{
-    color: #463F3A;
+.season h2 {
+  color: #463f3a;
 }
 
-.season h3{
-    font-size: 20px;
-    padding: 10px 0;
-    color: #6B705C;
+.season h3 {
+  font-size: 20px;
+  padding: 10px 0;
+  color: #6b705c;
 }
 
-.season ul{
-    width: 100%;
-    height: 450px;
-    margin: 0 auto;
-    border: 2px solid #fff;
-    display: flex;
+.season ul {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  display: flex;
 }
 
-.season li{
-    background-size: cover;
-    background-position: center center;
+.season li {
+  background-size: cover;
+  background-position: center center;
 
-    transition: 1s;
+  transition: 1s;
 }
 
-.season .pic1{
-    background-image: url('../image/chalet/season_01.jpeg');
-    flex-grow: 1;
+.season .pic1 {
+  background-image: url("../image/chalet/season_01.jpeg");
+  flex-grow: 1;
 }
 
-.season .pic2{
-    background-image: url('../image/chalet/season_02.jpeg');
-    flex-grow: 1;
+.season .pic2 {
+  background-image: url("../image/chalet/season_02.jpeg");
+  flex-grow: 1;
 }
 
-.season .pic3{
-    background-image: url('../image/chalet/season_03.jpg');
-    flex-grow: 3;
+.season .pic3 {
+  background-image: url("../image/chalet/season_03.jpg");
+  flex-grow: 3;
 }
 
-.season .pic4{
-    background-image: url('../image/chalet/season_04.jpeg');
-    flex-grow: 1;
+.season .pic4 {
+  background-image: url("../image/chalet/season_04.jpeg");
+  flex-grow: 1;
 }
 
-.season li:hover{
-    flex-grow: 5;
+.season li:hover {
+  flex-grow: 5;
 }
 
 /* ---頁尾--- */
-footer{
-    height: 200px;
-    background-color: #ccd5ae;
-    
-    text-align: center;
-    line-height: 1.5;
-    font-weight: 700;
-    color: #fff;
+footer {
+  height: 200px;
+  background-color: #ccd5ae;
+
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
 }
 
-footer .social_icon{
-    padding-top: 40px; 
+footer .social_icon {
+  padding-top: 40px;
 }
 
-footer a{
-    text-decoration: none;
+footer a {
+  text-decoration: none;
 }
 
-footer img{
-    width: 35px;
-    padding: 0 5px;
+footer img {
+  width: 35px;
+  padding: 0 5px;
 }
 
-footer h2{
-    font-size: 15px;
+footer h2 {
+  font-size: 15px;
 }
 
-footer h3{
-    font-size: 13px;
-    padding-top: 20px;
+footer h3 {
+  font-size: 13px;
+  padding-top: 20px;
 }

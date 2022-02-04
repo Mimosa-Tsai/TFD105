@@ -5,12 +5,11 @@ html {
 
 body {
   width: 1440px;
+  box-sizing: border-box;
   font-family: Arial, Verdana, "微軟正黑體";
   font-size: 18px;
   text-align: center;
-  box-sizing: border-box;
   background-color: #fefae0;
-  text-decoration: none;
 }
 
 /* ---頁首選單區塊--- */
@@ -100,8 +99,8 @@ main .room_icon a {
   color: #fff;
 }
 
-main .room_icon li:hover{
-    background-color: #A5A58D;
+main .room_icon li:hover {
+  background-color: #a5a58d;
 }
 
 /* ---圖文區塊--- */
@@ -164,8 +163,32 @@ main .ps {
   color: #6b705c;
 }
 
-main .room_pic img {
+main .room_pic_block {
+  position: relative;
+}
+
+main .room_pic_block .room_pic {
   width: 500px;
+}
+
+main .room_pic_block .room_pic_btn-left {
+  width: 16px;
+
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+main .room_pic_block .room_pic_btn-right {
+  width: 16px;
+
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 main .room .room_text:nth-of-type(2) {
@@ -173,30 +196,30 @@ main .room .room_text:nth-of-type(2) {
 }
 
 main .room .room_btn {
-    display: flex;
-    margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 
 main .room .room_btn a {
-    margin-right: 10px;
-    display: block;
-    width: 100px;
-    line-height: 30px;
+  margin-right: 10px;
+  display: block;
+  width: 100px;
+  line-height: 30px;
 
-    color: #6b705c;
+  color: #6b705c;
 
-    border: 1.5px solid #A5A58D;
-    border-radius: 20px;
+  border: 1.5px solid #a5a58d;
+  border-radius: 20px;
 
-    font-size: 16px;
-    font-weight: bolder;
-    text-decoration: none;
-    text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+  text-align: center;
 }
 
 main .room .room_btn a:hover {
-    background-color: #A5A58D;
-    color: #fff;
+  background-color: #a5a58d;
+  color: #fff;
 }
 
 /* ---裝飾線--- */
