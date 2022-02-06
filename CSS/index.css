@@ -12,13 +12,21 @@ header {
   position: relative;
 }
 
-header .logo_pic {
+.logo_pic > img {
   width: 160px;
-  margin: 0 auto;
-  padding-top: 40px;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  opacity: 0;
+
+  animation: logo 1s forwards;
 }
 
-.down {
+.logo_pic .down {
   width: 50px;
 
   position: absolute;
@@ -26,6 +34,8 @@ header .logo_pic {
   left: 0;
   right: 0;
   margin: auto;
+
+  animation: down 1s infinite;
 }
 
 /* --- 主要內容區塊 --- */
@@ -178,3 +188,31 @@ nav .home_btn:hover {
   flex-grow: 5;
 }
 
+/* ---動畫--- */
+
+@keyframes logo {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    top: 70px;
+    opacity: 1;
+  }
+  100% {
+    top: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0%{
+    bottom: 100px;
+  }
+  50%{
+    bottom: 80px;
+  }
+  100%{
+    bottom: 100px;
+  }
+}
