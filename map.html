@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>木村小木屋</title>
-    <link rel="stylesheet" href="./CSS/map.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./image/logo/logo_02.svg" alt="" class="logo"
-        /></a>
-        <ul>
-          <li><a href="room.html">木村房型</a></li>
-          <li><a href="map.html" class="selected">木村導覽</a></li>
-          <li><a href="activity.html">木村生活</a></li>
-          <li><a href="delicacy.html">佳餚美饌</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>木村小木屋</title>
+  <link rel="stylesheet" href="./CSS/map.css" />
+</head>
 
-    <main>
-      
+<body>
+  <header>
+    <nav>
+      <a href="./index.html"><img src="./image/logo/logo_02.svg" alt="" class="logo" /></a>
+      <ul>
+        <li><a href="room.html">木村房型</a></li>
+        <li><a href="map.html" class="selected">木村導覽</a></li>
+        <li><a href="activity.html">木村生活</a></li>
+        <li><a href="delicacy.html">佳餚美饌</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </main>
+  <div class="banner">木村導覽</div>
 
-    <footer>
-      <div class="social_icon">
-        <a href="https://www.instagram.com/">
-          <img src="./image/icon/Instagram.svg" alt="" />
-        </a>
-        <a href="https://zh-tw.facebook.com/">
-          <img src="./image/icon/Facebook.svg" alt="" />
-        </a>
+  <main>
+    <h2 class="h2">⊶ 村內地圖 ⊷</h2>
+    <div class="tour">
+      <div class="img">
+        <img src="./image/map/tourmap.svg" alt="">
       </div>
-      <h2>南投縣埔里鎮中正路149-1號｜連絡電話：(049)666-6666</h2>
-      <h3>
-        本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br />
-        參考資源：日光綠築｜SOME VILLAGE｜Pinterest。
-      </h3>
-    </footer>
-      
-  </body>
+      <div class="items">
+        <div id="item1" class="item">釣魚平台</div>
+        <div id="item2" class="item">湖邊步道</div>
+        <div id="item3" class="item">木村<br>小木屋</div>
+        <div id="item4" class="item">木村森林</div>
+        <div id="item5" class="item">村長的家</div>
+        <div id="item6" class="item">木村中心</div>
+      </div>
+    </div>
+
+    <h2 class="h2">⊶ 地理位置 ⊷</h2>
+    <div class="map">
+      <div class="googlemap"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4398.849850130434!2d120.99801013399343!3d23.962365657802916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468da32eb69bacd%3A0xedbedbfa23e8719f!2zNTQ15Y2X5oqV57ij5Z-U6YeM6Y6u6a-J6a2a6LevMzDomZ8!5e0!3m2!1szh-TW!2stw!4v1644161665215!5m2!1szh-TW!2stw"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+      <div class="card">
+        <div class="card1">
+          <h3>01 自行開車</h3>
+          <ul>
+            <li>南投縣埔里鎮鯉魚路30號</li>
+            <li>木村設有免費停車場</li>
+          </ul>
+        </div>
+        <div class="card2">
+          <h3>02 大眾交通</h3>
+          <ul>
+            <li>搭乘高鐵至高鐵台中站⇀轉乘160號公車至朝馬轉運站⇀轉乘1832A客運至埔里站</li>
+            <li>搭乘火車至車埕站⇀轉乘6729號公車至魚池站⇀轉乘6289號公車至埔里站</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social_icon">
+      <a href="https://www.instagram.com/">
+        <img src="./image/icon/Instagram.svg" alt="" />
+      </a>
+      <a href="https://zh-tw.facebook.com/">
+        <img src="./image/icon/Facebook.svg" alt="" />
+      </a>
+    </div>
+    <h2>南投縣埔里鎮鯉魚路30號｜連絡電話：(049)666-6666</h2>
+    <h3>
+      本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。<br />
+      參考資源：日光綠築｜SOME VILLAGE｜Pinterest。
+    </h3>
+  </footer>
+
+</body>

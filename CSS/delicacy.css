@@ -27,7 +27,6 @@ main {
 
 .wrapper .img {
   width: 50%;
-  /* margin-top: 4rem; */
 }
 
 .wrapper .img img {
@@ -66,7 +65,6 @@ main {
 }
 
 .wrapper .card .card_notice {
-  /* align-self: flex-end; */
   font-size: 0.9rem;
 }
 
