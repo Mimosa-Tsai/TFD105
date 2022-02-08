@@ -19,6 +19,7 @@ main .room_icon {
   position: fixed;
   top: 120px;
   right: 5px;
+  z-index: 1;
 }
 
 main .room_icon li {
@@ -258,4 +259,5 @@ main #room_three::before {
 
 .close:hover, .close:focus {
   color: #FFCB69;
+  text-shadow: .1rem .1rem .2rem #6B705C;
 }
