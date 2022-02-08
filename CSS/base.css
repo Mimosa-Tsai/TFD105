@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  width: 1440px;
+  /* width: 1440px; */
   font-family: Arial, Verdana, "微軟正黑體";
   font-size: 18px;
   text-align: center;

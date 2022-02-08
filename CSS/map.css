@@ -60,6 +60,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    transition: .5s;
+}
+
+.item:hover {
+    transform: scale(1.2);
 }
 
 /* ---items定位--- */
