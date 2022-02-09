@@ -247,6 +247,7 @@ main #room_three::before {
 .modal_content li i {
   margin-right: 10px;
   font-size: 20px;
+  width: 25px;
 }
 
 .modal .close {
