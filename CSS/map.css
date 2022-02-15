@@ -4,7 +4,7 @@
 
 .banner {
     width: 100%;
-    line-height: 600px;
+    line-height: 400px;
     font-size: 3rem;
     font-weight: bolder;
     
@@ -15,6 +15,8 @@
     content: '';
     background-image: url('../image/big_pic/map_banner.jpeg');
     background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     position: absolute;
     top: 0;

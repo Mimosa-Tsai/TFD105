@@ -1,15 +1,14 @@
 @import url("base.css");
-@import url("header.css");
-@import url("footer.css");
 
 .banner {
   width: 100%;
-  height: 600px;
+  height: 400px;
   background-image: url("../image/delicacy/banner.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: bottom;
   margin-bottom: 5rem;
-  line-height: 600px;
+  line-height: 400px;
   font-size: 3rem;
   font-weight: bolder;
   color: #463F3A;
