@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+
   margin-bottom: 5rem;
   line-height: 400px;
   font-size: 3rem;
@@ -46,24 +47,20 @@ main {
   font-weight: bolder;
 }
 
-.wrapper .card .card_title {
+.wrapper .card h2 {
   font-size: 2rem;
   line-height: 2.75rem;
 }
 
-.wrapper .card .card_subtitle {
+.wrapper .card h3 {
   font-size: 1.5rem;
 }
 
-.wrapper .card .card_description {
-  padding: 4rem 0 4rem;
+.wrapper .card > p {
+  padding: 4rem 0 0;
 }
 
-.wrapper .card .card_notice {
-  font-size: 1rem;
-}
-
-.wrapper .card .card_notice span {
+.wrapper .card span {
   padding-right: 1rem;
   color: #ffcb69;
 }

@@ -24,6 +24,7 @@ header {
   height: 90px;
   padding: 5px 0;
   background-color: #fffdf0;
+  box-shadow: 0 .1rem .3rem rgba(165, 165, 141, .3);
 
   position: sticky;
   top: 0;
