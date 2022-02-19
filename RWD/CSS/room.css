@@ -1,262 +1,188 @@
 @import url("base.css");
-
-/* ---主要內容區塊--- */
-
-main .header {
-  width: 100%;
-  height: 90px;
+.room {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-main {
-  width: 1200px;
-  margin: 0 auto;
+.room-divider {
+    margin: 5rem 0;
 }
 
-/* ---右側固定選單--- */
-main .room_icon {
-  position: fixed;
-  top: 120px;
-  right: 5px;
-  z-index: 1;
-}
-
-main .room_icon li {
-  width: 60px;
-  height: 60px;
-  background-color: #ccd5ae;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-main .room_icon a {
-  display: block;
-  width: 60px;
-  height: 60px;
-  text-decoration: none;
-  font-size: 32px;
-  line-height: 60px;
-  color: #fff;
-}
-
-main .room_icon li:hover {
-  background-color: #a5a58d;
-}
-
-/* ---圖文區塊--- */
-main .room {
-  padding: 7rem 0;
-  display: flex;
-}
-
-main .room:nth-of-type(1) {
-  padding: 6rem 0 7rem 0;
-  display: flex;
-}
 
 /* ---文字內容--- */
-main .room_text {
-  width: 700px;
-  text-align: left;
-  padding: 0 20px 20px 0;
+
+.room_text {
+    font-weight: bolder;
 }
 
-main .room_text h2 {
-  color: #463f3a;
-  font-size: 28px;
-  font-weight: bolder;
-  margin-bottom: 20px;
+.room_text h2 {
+    color: #463f3a;
+    font-size: 28px;
+    font-weight: bolder;
 }
 
-main .room_text p {
-  color: #6b705c;
-  font-weight: bolder;
-  margin-bottom: 20px;
-}
-
-main .room .room_text:nth-of-type(2) {
-  padding-left: 50px;
-}
 
 /* ---價目表--- */
-main table {
-  width: 500px;
-  border: 1.7px solid #6b705c;
-  table-layout: fixed;
-  line-height: 1.7;
-  margin-bottom: 20px;
+
+.room .table {
+    max-width: 600px;
+    table-layout: fixed;
+    text-align: center;
+    color: #6b705c;
 }
 
-main table .tr1 {
-  background-color: #ccd5ae;
-  color: #6b705c;
+.room table thead {
+    background-color: #ccd5ae;
 }
 
-main table td {
-  color: #6b705c;
-  border: 1px solid #6b705c;
-  text-align: center;
-  font-weight: bolder;
-}
 
 /* ---補充文字--- */
-main .ps {
-  margin-left: 20px;
-  list-style: circle;
-  line-height: 1.7;
-  font-size: 16px;
-  font-weight: bolder;
-  color: #6b705c;
+
+.room .ps {
+    padding-left: 1rem;
+    list-style: circle;
+    line-height: 1.7;
+    letter-spacing: 0.02rem;
+    font-size: 16px;
 }
 
-/* ---房型圖片--- */
-main .room_pic_block {
-  position: relative;
-}
-
-main .room_pic_block .room_pic {
-  width: 500px;
-}
-
-/* ---左右箭頭定位--- */
-main .room_pic_block .room_pic_btn-left {
-  width: 16px;
-
-  position: absolute;
-  left: 5px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-main .room_pic_block .room_pic_btn-right {
-  width: 16px;
-
-  position: absolute;
-  right: 5px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
 
 /* ---彈窗按鈕--- */
-main .room .room_btn {
-  display: flex;
-  margin-top: 20px;
+
+.room .room_btn {
+    display: flex;
+    margin-bottom: 1rem;
 }
 
-main .room .room_btn a {
-  margin-right: 10px;
-  display: block;
-  width: 100px;
-  line-height: 30px;
-
-  color: #6b705c;
-
-  border: 1.5px solid #a5a58d;
-  border-radius: 20px;
-
-  font-size: 16px;
-  font-weight: bolder;
-  text-decoration: none;
-  text-align: center;
+.room .room_btn a {
+    margin-right: 10px;
+    display: block;
+    width: 100px;
+    line-height: 30px;
+    border: 1.5px solid #a5a58d;
+    border-radius: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
 }
 
-main .room .room_btn a:hover {
-  background-color: #a5a58d;
-  color: #fff;
+.room .room_btn a:hover {
+    background-color: #a5a58d;
+    color: #fff;
 }
 
-/* ---裝飾線--- */
 
-main #room_two {
-  position: relative;
+/* ---房型圖片--- */
+
+.room_pic_block {
+    position: relative;
 }
 
-main #room_three {
-  position: relative;
+
+/* ---左右箭頭定位--- */
+
+.room_pic_block .room_pic_btn-left {
+    width: 16px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-main #room_two::before {
-  content: "";
-  display: block;
-  background-color: #ccd5ae;
-  width: 1000px;
-  height: 2px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+.room_pic_block .room_pic_btn-right {
+    width: 16px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-main #room_three::before {
-  content: "";
-  display: block;
-  background-color: #ccd5ae;
-  width: 1000px;
-  height: 2px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
 
 /* ---彈窗區塊--- */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  overflow: auto;
-  z-index: 1;
 
-  width: 100%;
-  height: 100%;
-  
-  
-  background-color: rgba(255,253,240,0.7);
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 253, 240, 0.7);
 }
 
 .modal_content {
-  width: 50%;
-  background-color: rgba(204, 213, 174,0.9);
-  border: 2px solid #A5A58D;
-  border-radius: 10px;
-
-  margin: 8% auto 0;
-  padding: 30px;
-
-  text-align: left;
-  font-weight: bolder;
-  line-height: 2;
-  color: #463F3A;
+    width: 50%;
+    background-color: rgba(204, 213, 174, 0.9);
+    border: 2px solid #A5A58D;
+    border-radius: 10px;
+    margin: 8% auto 0;
+    padding: 30px;
+    text-align: left;
+    font-weight: bolder;
+    line-height: 2;
+    color: #463F3A;
 }
 
 .modal_content h3 {
-  font-size: 28px;
+    font-size: 28px;
 }
 
 .modal_content li i {
-  margin-right: 10px;
-  font-size: 20px;
-  width: 25px;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 25px;
 }
 
 .modal .close {
-  float: right;
-  font-size: 36px;
-  line-height: 1;
-  color: #463F3A;
-  cursor: pointer;
+    float: right;
+    font-size: 36px;
+    line-height: 1;
+    color: #463F3A;
+    cursor: pointer;
 }
 
-.close:hover, .close:focus {
-  color: #FFCB69;
-  text-shadow: .1rem .1rem .2rem #6B705C;
+.close:hover,
+.close:focus {
+    color: #FFCB69;
+    text-shadow: .1rem .1rem .2rem #6B705C;
+}
+
+
+/* ---右側固定選單--- */
+
+.room_icon {
+    position: fixed;
+    top: 120px;
+    right: 5px;
+    z-index: 1;
+    text-align: center;
+}
+
+.room_icon li {
+    width: 60px;
+    height: 60px;
+    background-color: #ccd5ae;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.room_icon a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.room_icon li:hover {
+    background-color: #a5a58d;
 }
