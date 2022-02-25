@@ -1,0 +1,62 @@
+@import url("base.css");
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/delicacy/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 5rem;
+    text-align: center;
+    line-height: 400px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #463F3A;
+}
+
+.delicacy .row {
+    margin-bottom: 4rem;
+    background-color: #fffdf0;
+    align-items: center;
+}
+
+.delicacy .row>div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.delicacy .info {
+    padding: 1rem 2.5rem;
+    color: #6b705c;
+    text-align: left;
+    line-height: 1.75rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.delicacy .info h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.75rem;
+}
+
+.delicacy .info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.delicacy .info p {
+    margin-bottom: 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.delicacy .notice {
+    margin-bottom: 0;
+}
+
+.delicacy .info span {
+    padding-right: 1rem;
+    color: #ffcb69;
+}
