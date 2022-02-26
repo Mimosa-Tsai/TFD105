@@ -2,217 +2,244 @@
 
 /* --- 頁首 --- */
 .cover {
-  background-image: url("../image/big_pic/home01.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 760px;
-
-  position: relative;
+    background-image: url("../image/big_pic/home01.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 760px;
+  
+    position: relative;
 }
-
+  
 .cover .logo_pic > img {
-  width: 160px;
-
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  margin: auto;
-
-  opacity: 0;
-
-  animation: logo 1.5s forwards;
+    width: 160px;
+  
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+    opacity: 0;
+  
+    animation: logo 1.5s forwards;
 }
-
+  
 .cover .logo_pic .down {
-  width: 45px;
-
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  right: 0;
-  margin: auto;
-
-  animation: down 1s infinite;
+    width: 45px;
+  
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+    animation: down 1s infinite;
 }
 
 /* --- 主要內容區塊 --- */
 main {
-  width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* --- 圓形圖片選單 --- */
 .home_text {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 28px;
-  font-weight: bolder;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 28px;
+    font-weight: bolder;
 }
-
+  
 .round_nav {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
-
+  
 .round_nav h2 {
-  font-weight: bolder;
-  color: #463f3a;
+    font-weight: bolder;
+    color: #463f3a;
 }
-
+  
 .round_nav h3 {
-  font-size: 20px;
-  padding: 10px 0;
-  color: #6b705c;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 10px 0;
+    color: #6b705c;
 }
-
+  
 .round_nav ul {
-  width: 80%;
-  display: flex;
-  margin: 0 auto;
-  padding-top: 20px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
 }
-
+  
 .round_nav ul li {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
-
-.round_nav a {
-  text-decoration: none;
+@media screen and (max-width: 575.98px){
+    .round_nav ul li{
+        margin: 2rem 0;
+    }
 }
-
-.round_nav img {
-  width: 200px;
-  border-radius: 50%;
-  opacity: 0.5;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
+  
+.round_nav ul li a {
+    text-align: center;
+    text-decoration: none;
 }
-
-.round_nav img:hover {
-  opacity: 1;
+  
+.round_nav ul li img {
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0.5;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
 }
-
-.round_nav p {
-  line-height: 2.5;
-  font-weight: 700;
-  color: #463f3a;
+@media screen and (max-width: 575.98px) {
+    .round_nav ul li img {
+        opacity: 1;
+    }
 }
-
-.round_nav .home_btn {
-  width: 30%;
-  border: 2px solid #a5a58d;
-  border-radius: 20px;
-  font-family: Arial;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #6b705c;
-  margin: 0 auto;
+  
+.round_nav ul li img:hover {
+    opacity: 1;
 }
-
-.round_nav .home_btn:hover {
-  background-color: #a5a58d;
-  color: #fff;
+  
+.round_nav ul li p {
+    text-align: center;
+    line-height: 2.5;
+    font-weight: bold;
+    color: #463f3a;
+    margin-top: 1rem;
+}
+  
+.round_nav .round_btn {
+    width: 30%;
+    border: 2px solid #a5a58d;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #6b705c;
+    margin: -1rem auto;
+}
+  
+.round_nav .round_btn:hover {
+    background-color: #a5a58d;
+    color: #fff;
 }
 
 /* ---四季圖片區塊--- */
 .season::before {
-  content: "";
-  display: block;
-  background-color: #ccd5ae;
-  width: 1000px;
-  height: 2px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+    content: "";
+    display: block;
+    background-color: #ccd5ae;
+    width: 1000px;
+    height: 2px;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-
+@media screen and (max-width: 575.98px) {
+    .season::before {
+        display: none;
+    }
+}
+  
 .season {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
-
+@media screen and (max-width: 575.98px) {
+    .season {
+        padding-top: 0;
+    }
+}
+  
 .season h2 {
-  color: #463f3a;
+    font-weight: bold;
+    color: #463f3a;
 }
-
+  
 .season h3 {
-  font-size: 20px;
-  padding: 10px 0;
-  color: #6b705c;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #6b705c;
 }
-
+  
 .season ul {
-  width: 100%;
-  height: 450px;
-  margin: 0 auto;
-  display: flex;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+}
+@media screen and (max-width: 575.98px) {
+    .season ul {
+        height: 700px;
+    }
 }
 
-.season li {
-  background-size: cover;
-  background-position: center center;
-  border: 2px solid #FEFAE0;
-
-  transition: 1s;
+  
+.season ul li {
+    background-size: cover;
+    background-position: center center;
+    border: 2px solid #FEFAE0;
+  
+    transition: 1s;
 }
-
-.season .pic1 {
-  background-image: url("../image/chalet/season_01.jpeg");
-  flex-grow: 1;
+  
+.season ul .pic1 {
+    background-image: url("../image/chalet/season_01.jpeg");
+    flex-grow: 1;
 }
-
-.season .pic2 {
-  background-image: url("../image/chalet/season_02.jpeg");
-  flex-grow: 1;
+  
+.season ul .pic2 {
+    background-image: url("../image/chalet/season_02.jpeg");
+    flex-grow: 1;
 }
-
-.season .pic3 {
-  background-image: url("../image/chalet/season_03.jpg");
-  flex-grow: 1;
+  
+.season ul .pic3 {
+    background-image: url("../image/chalet/season_03.jpg");
+    flex-grow: 1;
 }
-
-.season .pic4 {
-  background-image: url("../image/chalet/season_04.jpeg");
-  flex-grow: 1;
+  
+.season ul .pic4 {
+    background-image: url("../image/chalet/season_04.jpeg");
+    flex-grow: 1;
 }
-
-.season li:hover {
-  flex-grow: 5;
+  
+.season ul li:hover {
+    flex-grow: 5;
 }
 
 /* ---動畫--- */
-
 @keyframes logo {
-  0% {
-    top: 0;
-    opacity: 0;
-  }
-  30% {
-    top: 70px;
-    opacity: 1;
-  }
-  100% {
-    top: 40px;
-    opacity: 1;
-  }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
-
+  
 @keyframes down {
-  0%{
-    bottom: 100px;
-  }
-  50%{
-    bottom: 90px;
-  }
-  100%{
-    bottom: 100px;
-  }
+    0%{
+      bottom: 300px;
+    }
+    50%{
+      bottom: 290px;
+    }
+    100%{
+      bottom: 300px;
+    }
 }

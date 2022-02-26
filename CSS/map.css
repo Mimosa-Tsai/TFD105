@@ -1,6 +1,4 @@
 @import url('base.css');
-@import url('header.css');
-@import url('footer.css');
 
 .banner {
     width: 100%;
@@ -32,79 +30,39 @@ main {
     margin: 0 auto;
 }
 
-.tour {
-    position: relative;
-}
-
-.h2 {
+main .h2 {
     font-size: 28px;
     font-weight: bolder;
     padding-top: 5rem;
     color: #463F3A;
 }
 
-.img {
-    width: 800px;
-    margin: 1.5rem auto 3.5rem;
-}
-
-.item {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #A5A58D;
-
-    font-size: 20px;
-    font-weight: bolder;
-    color: #fffdf0;
-    
+main .tour {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    transition: .5s;
 }
 
-.item:hover {
-    transform: scale(1.2);
+main .items {
+    width: 30%;
+    padding-top: 5rem;
+    padding-left: 5rem;
+
+    border: 1px solid rebeccapurple;
 }
 
-/* ---items定位--- */
-#item1 {
-    position: absolute;
-    top: 110px;
-    left: 140px;
+main .items a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    color: #6B705C;
 }
 
-#item2 {
-    position: absolute;
-    bottom: 115px;
-    left: 160px;
-}
+main .img {
+    width: 800px;
 
-#item3 {
-    position: absolute;
-    bottom: -50px;
-    left: 200px;
-}
-
-#item4 {
-    position: absolute;
-    top: 15px;
-    right: 180px;
-}
-
-#item5 {
-    position: absolute;
-    top: 190px;
-    right: 115px;
-}
-
-#item6 {
-    position: absolute;
-    bottom: 40px;
-    right: 130px;
+    border: 1px solid red;
 }
 
 /* ---地圖區塊--- */
