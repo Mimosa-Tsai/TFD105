@@ -1,0 +1,25 @@
+@import url("base.css");
+
+.banner {
+    width: 100%;
+    line-height: 400px;
+    font-size: 3rem;
+    font-weight: bolder;
+    
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    background-image: url('../image/big_pic/map_banner.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
