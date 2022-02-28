@@ -1,7 +1,7 @@
 @import url('base.css');
 
 body {
-    background-image: url("/image/big_pic/activity_bg.png");
+    background-image: url("../image/big_pic/activity_bg.png");
 }
 
 .item_left {
