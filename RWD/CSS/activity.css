@@ -1,4 +1,9 @@
 @import url('base.css');
+
+body {
+    background-image: url("/image/big_pic/activity_bg.png");
+}
+
 .item_left {
     display: flex;
     margin: 3rem 0;

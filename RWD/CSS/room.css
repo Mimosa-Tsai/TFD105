@@ -109,6 +109,11 @@
     width: 25px;
 }
 
+.modal_content ul li img {
+    width: 100px;
+    border-radius: 10px;
+}
+
 .modal .close {
     float: right;
     font-size: 36px;

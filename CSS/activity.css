@@ -1,5 +1,9 @@
 @import url('./base.css');
 
+body {
+    background-image: url("/image/big_pic/activity_bg.png");
+}
+
 main {
     width: 1100px;
     margin: 0 auto;
