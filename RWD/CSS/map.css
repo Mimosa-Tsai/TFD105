@@ -1,25 +1,99 @@
 @import url("base.css");
-
 .banner {
     width: 100%;
+    height: 400px;
+    background-image: url("../image/big_pic/map_banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 5rem;
+    text-align: center;
     line-height: 400px;
     font-size: 3rem;
     font-weight: bolder;
-    
-    position: relative;
+    color: #463f3a;
+    opacity: 0.8;
 }
 
-.banner::before {
-    content: '';
-    background-image: url('../image/big_pic/map_banner.jpeg');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    opacity: 0.5;
+/* ---主要內容區塊--- */
+
+.map .row {
+    margin-bottom: 5rem;
+}
+
+.map .title {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #463F3A;
+}
+
+.map-img {
+    text-align: right;
+}
+
+.map-img img {
+    max-width: 900px;
+}
+
+.map-items {
+    padding-top: 2.5rem;
+}
+
+.map-item {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6B705C;
+}
+
+@media screen and (max-width: 991.98px) {
+    .map-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .map-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 50%;
+    }
+}
+
+
+/* ---地圖區塊--- */
+
+.googlemap {
+    padding-right: 0;
+}
+
+.googlemap iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+}
+
+.info {
+    background-color: #fffdf0;
+    padding: 2rem;
+    font-weight: bolder;
+    text-align: left;
+    line-height: 2;
+}
+
+.info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #463F3A;
+}
+
+.info ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.info li {
+    color: #6B705C;
 }

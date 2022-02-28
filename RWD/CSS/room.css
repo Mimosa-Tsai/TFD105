@@ -4,10 +4,6 @@
     margin-bottom: 5rem;
 }
 
-.room-divider {
-    margin: 5rem 0;
-}
-
 
 /* ---文字內容--- */
 
@@ -29,11 +25,11 @@
     table-layout: fixed;
     text-align: center;
     color: #6b705c;
+    border-color: #6b705c;
 }
 
 .room table thead {
     background-color: #ccd5ae;
-    
 }
 
 
@@ -70,34 +66,6 @@
 .room .room_btn a:hover {
     background-color: #a5a58d;
     color: #fff;
-}
-
-
-/* ---房型圖片--- */
-
-.room_pic_block {
-    position: relative;
-}
-
-
-/* ---左右箭頭定位--- */
-
-.room_pic_block .room_pic_btn-left {
-    width: 16px;
-    position: absolute;
-    left: 5px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.room_pic_block .room_pic_btn-right {
-    width: 16px;
-    position: absolute;
-    right: 5px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
 }
 
 
@@ -186,4 +154,10 @@
 
 .room_icon li:hover {
     background-color: #a5a58d;
+}
+
+@media screen and (max-width: 767.98px) {
+    .room_icon {
+        display: none;
+    }
 }

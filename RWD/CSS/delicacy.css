@@ -1,5 +1,4 @@
 @import url("base.css");
-
 .banner {
     width: 100%;
     height: 400px;
@@ -13,6 +12,7 @@
     font-size: 3rem;
     font-weight: bolder;
     color: #463F3A;
+    opacity: 0.8;
 }
 
 .delicacy .row {

@@ -21,6 +21,10 @@ ul {
     padding-left: 0;
 }
 
+.divider {
+    margin: 5rem 0;
+}
+
 
 /* ---頁首選單--- */
 
@@ -83,7 +87,7 @@ header nav ul li a.active::after {
     background-color: #ffcb69 !important;
 }
 
-header .navbar{
+header .navbar {
     padding: 0;
 }
 
