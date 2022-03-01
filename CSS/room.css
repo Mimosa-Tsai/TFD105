@@ -99,6 +99,12 @@
     color: #463F3A;
 }
 
+@media screen and (max-width: 767.98px) {
+    .modal_content {
+        width: 90%;
+    }
+}
+
 .modal_content h3 {
     font-size: 28px;
 }
