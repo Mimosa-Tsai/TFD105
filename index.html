@@ -13,20 +13,13 @@
 </head>
 
 <body>
-    <!-- 滿版封面 -->
-    <div class="cover">
-        <div class="logo_pic">
-            <img src="./image/logo/logo_01.svg" alt="">
-            <a href="#nav"><img src="./image/icon/down.svg" alt="" class="down"></a>
-        </div>
-    </div>
-
     <!-- 導覽列選單 -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light nav_bg">
             <div class="container">
-                <a class="navbar-brand" href="./index.html"><img src="./image/logo/logo_02.svg" alt=""
-                        class="logo" /></a>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./image/logo/logo_02.svg" alt="" class="logo" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -43,6 +36,14 @@
             </div>
         </nav>
     </header>
+
+    <!-- 滿版封面 -->
+    <div class="cover">
+        <div class="scroll_box">
+            <span>Scroll</span>
+            <img src="./image/icon/down.svg" alt="" class="down">
+        </div>
+    </div>
 
     <!-- 主要內容區塊 -->
     <div class="container round">
@@ -105,6 +106,8 @@
         </p>
     </footer>
 
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
