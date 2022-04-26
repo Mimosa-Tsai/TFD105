@@ -12,17 +12,26 @@
     position: relative;
 }
 
-/* .cover .logo_pic>img {
-    width: 160px;
+/* --- 封面文字 --- */
+.cover .cover_text{
+    width: 250px;
+    text-align: center;
+    color: #fff;
+
     position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     opacity: 0;
     animation: logo 1.5s forwards;
-} */
+}
+.cover .cover_text h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
 
+/* --- scroll icon --- */
 .cover .scroll_box {
     width: 50px;
     line-height: 1rem;
@@ -66,9 +75,6 @@
 
 .round ul li {
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    margin: 0 auto; */
 }
 
 .round ul li img {
@@ -207,14 +213,14 @@
 
 /* ---動畫--- */
 
-/* @keyframes logo {
+@keyframes logo {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-} */
+}
 
 @keyframes down {
     0% {
