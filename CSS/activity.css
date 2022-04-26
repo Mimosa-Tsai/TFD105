@@ -1,19 +1,25 @@
 @import url('base.css');
 
-body {
+/* body {
     background-image: url("../image/big_pic/activity_bg.png");
-}
+} */
 
+/* --- 左邊圖文 --- */
 .item_left {
     display: flex;
     margin: 3rem 0;
     position: relative;
 }
 
+.item_left:nth-of-type(1) {
+    margin-top: 8rem;
+}
+
 .item_left:nth-of-type(5) {
     margin-bottom: 5rem;
 }
 
+/* --- 右邊圖文 --- */
 .item_right {
     display: flex;
     justify-content: flex-end;
@@ -151,3 +157,178 @@ footer {
     top: -160px;
     right: 100px;
 }
+
+/* --- 背景動畫 --- */
+ul.BackgroundCircle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+  }
+  .triangle {
+    position: relative;
+    background-color:#f7f6f5;
+    text-align: left;
+    display: block;
+  }
+  .triangle:before,
+  .triangle:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+  }
+  .triangle,
+  .triangle:before,
+  .triangle:after {
+    width:  10em;
+    height: 10em;
+    border-top-right-radius: 30%;
+  }
+  .triangle {
+    transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+  }
+  .triangle:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+  }
+  .triangle:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+  }
+  .triangle-wh {
+    position: relative;
+    background-color:#fff;
+    text-align: left;
+    display: block;
+  }
+  .triangle-wh:before,
+  .triangle-wh:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+  }
+  .triangle-wh,
+  .triangle-wh:before,
+  .triangle-wh:after {
+    border-top-right-radius: 30%;
+  }
+  .triangle-wh {
+    transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+  }
+  .triangle-wh:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+  }
+  .triangle-wh:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+  }
+  ul.BackgroundCircle li{
+    position: absolute;
+    list-style: none;
+    animation: animate 25s cubic-bezier(0, 0.24, 1, 0.56) infinite;
+    bottom: -300px;
+  }
+  ul.BackgroundCircle li:nth-child(1){
+    left: 25%;
+    animation-delay: 0s;
+    bottom: -400px;
+  }
+  ul.BackgroundCircle li:nth-child(1)>.triangle,
+  ul.BackgroundCircle li:nth-child(1)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(1)>.triangle:after {
+    width:  100px;
+    height: 100px;
+    background-color: #ffe1a8;
+  }
+  ul.BackgroundCircle li:nth-child(2){
+    left: 0;
+    animation-delay: 12s;
+    bottom: -500px;
+  }
+  ul.BackgroundCircle li:nth-child(2)>.triangle,
+  ul.BackgroundCircle li:nth-child(2)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(2)>.triangle:after {
+    width:  80px;
+    height: 80px;
+    background-color: #baa587;
+  }
+  ul.BackgroundCircle li:nth-child(3){
+    left: 50%;
+    animation-delay: 6s;
+  }
+  ul.BackgroundCircle li:nth-child(3)>.triangle,
+  ul.BackgroundCircle li:nth-child(3)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(3)>.triangle:after {
+    width:  120px;
+    height: 120px;
+    background-color: #997b66;
+  }
+  ul.BackgroundCircle li:nth-child(4){
+    right: 0;
+    animation-delay: 15s;
+  }
+  ul.BackgroundCircle li:nth-child(4)>.triangle,
+  ul.BackgroundCircle li:nth-child(4)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(4)>.triangle:after {
+    width:  80px;
+    height: 80px;
+    background-color: #b58463;
+  }
+  ul.BackgroundCircle li:nth-child(5){
+    right: 17%;
+    animation-delay: 3s;
+  }
+  ul.BackgroundCircle li:nth-child(5)>.triangle,
+  ul.BackgroundCircle li:nth-child(5)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(5)>.triangle:after {
+    width:  50px;
+    height: 50px;
+    background-color: #d08c60;
+  }
+  ul.BackgroundCircle li:nth-child(6){
+    right: 28%;
+    animation-delay: 9s;
+  }
+  ul.BackgroundCircle li:nth-child(6)>.triangle,
+  ul.BackgroundCircle li:nth-child(6)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(6)>.triangle:after {
+    width:  30px;
+    height: 30px;
+    background-color: #9b9b7a;
+  }
+  ul.BackgroundCircle li:nth-child(7){
+    left: 40%;
+    animation-delay: 18s;
+  }
+  ul.BackgroundCircle li:nth-child(7)>.triangle,
+  ul.BackgroundCircle li:nth-child(7)>.triangle:before,
+  ul.BackgroundCircle li:nth-child(7)>.triangle:after {
+    width:  120px;
+    height: 120px;
+    background-color: #ffcb69;
+  }
+  ul.BackgroundCircle li{
+    animation: rotation1 20s cubic-bezier(0, 0.24, 1, 0.56) infinite;
+  }
+  
+@keyframes rotation1 {
+    0%{
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-2000px) rotate(720deg) scale(0.3);
+        opacity: 1;
+    }
+  }
+ 
+  
+  ::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+  }
