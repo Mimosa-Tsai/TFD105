@@ -114,6 +114,7 @@
     border-radius: 20px;
     font-size: 16px;
     color: #6b705c;
+    transition: .3s;
 }
 
 .round .round_btn:hover {
