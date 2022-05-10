@@ -1,9 +1,17 @@
 @import url("base.css");
 .room {
-    margin-top: 8rem;
+    margin-top: 1rem;
     margin-bottom: 5rem;
 }
 
+/* --- 三大房型高度 --- */
+#room_one, #room_two, #room_three{
+    padding-top: 8rem;
+}
+
+/* #room_two{
+    background-color: #fff;
+} */
 
 /* --- 文字內容 --- */
 
@@ -67,12 +75,6 @@
 .room .room_btn a:hover {
     background-color: #a5a58d;
     color: #fff;
-}
-
-/* --- 裝飾線 --- */
-
-hr:not([size]) {
-    height: 2px;
 }
 
 /* --- 彈窗區塊 --- */

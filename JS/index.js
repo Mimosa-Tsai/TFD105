@@ -6,7 +6,7 @@ $(document).ready(function() {
         var height = $('.cover').height();
         var scrollTop = $(window).scrollTop();
 
-        if (scrollTop >= height - 400) {
+        if (scrollTop >= height - 600) {
             $('.nav_bg').addClass('solid_nav');
         } else {
             $('.nav_bg').removeClass('solid_nav');
