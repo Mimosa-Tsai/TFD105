@@ -5,7 +5,7 @@
 }
 
 
-/* ---文字內容--- */
+/* --- 文字內容 --- */
 
 .room_text {
     font-weight: bolder;
@@ -18,7 +18,7 @@
 }
 
 
-/* ---價目表--- */
+/* --- 價目表 --- */
 
 .room .table {
     max-width: 600px;
@@ -33,7 +33,7 @@
 }
 
 
-/* ---補充文字--- */
+/* --- 補充文字 --- */
 
 .room .ps {
     padding-left: 1rem;
@@ -44,7 +44,7 @@
 }
 
 
-/* ---彈窗按鈕--- */
+/* --- 彈窗按鈕 --- */
 
 .room .room_btn {
     display: flex;
@@ -61,6 +61,7 @@
     font-size: 16px;
     text-decoration: none;
     text-align: center;
+    transition: .3s;
 }
 
 .room .room_btn a:hover {
@@ -68,8 +69,13 @@
     color: #fff;
 }
 
+/* --- 裝飾線 --- */
 
-/* ---彈窗區塊--- */
+hr:not([size]) {
+    height: 2px;
+}
+
+/* --- 彈窗區塊 --- */
 
 .modal {
     display: none;
@@ -135,7 +141,7 @@
 }
 
 
-/* ---右側固定選單--- */
+/* --- 右側固定選單 --- */
 
 .room_icon {
     position: fixed;
@@ -151,6 +157,7 @@
     background-color: #ccd5ae;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: .3s;
 }
 
 .room_icon a {
