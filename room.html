@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/room.css" />
+    <!-- 滑入動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -39,7 +41,7 @@
 
     <!-- 主要內容區塊 -->
     <div class="container room">
-        <div id="room_one" class="row" data-id="room_one">
+        <div id="room_one" class="row" data-id="room_one" data-aos="zoom-in">
             <div class="col-md-7">
                 <!-- 文字內容 -->
                 <div class="room_text">
@@ -112,7 +114,7 @@
 
         <hr class="divider">
 
-        <div id="room_two" class="row" data-id="room_two">
+        <div id="room_two" class="row" data-id="room_two" data-aos="zoom-in">
             <div class="col-md-7 order-md-2">
                 <!-- 文字內容 -->
                 <div class="room_text">
@@ -186,7 +188,7 @@
 
         <hr class="divider">
 
-        <div id="room_three" class="row" data-id="room_three">
+        <div id="room_three" class="row" data-id="room_three" data-aos="zoom-in">
             <div class="col-md-7">
                 <!-- 文字內容 -->
                 <div class="room_text">
@@ -330,6 +332,14 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="./JS/room.js"></script>
+    <!-- 滑入動畫套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
 </body>
 
 </html>

@@ -8,6 +8,8 @@
     <title>佳餚美饌</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/delicacy.css" />
+    <!-- 滑入動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -37,7 +39,7 @@
     <!-- 主要內容區塊 -->
     <div class="container delicacy">
         <!-- 早餐圖文 -->
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
             <div class="col-lg-6">
                 <div class="img">
                     <img class="img-fluid" src="./image/delicacy/breakfast.jpg" />
@@ -60,7 +62,7 @@
             </div>
         </div>
         <!-- 晚餐圖文 -->
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
             <div class="col-lg-6">
                 <img class="img-fluid" src="./image/delicacy/bbq.jpeg" />
             </div>
@@ -97,6 +99,14 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- 滑入動畫套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
 </body>
 
 </html>

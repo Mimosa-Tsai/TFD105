@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/activity.css" />
+    <!-- 滑入動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -39,7 +41,7 @@
     <div class="container activity">
 
         <!-- 圖文內容_左 -->
-        <div class="item_left">
+        <div class="item_left" data-aos="fade-left">
             <img class="item_pic" src="./image/activity/yoga.jpeg" alt="" />
             <div class="item_tl">
                 <div class="item_text">
@@ -50,7 +52,7 @@
         </div>
 
         <!-- 圖文內容_右 -->
-        <div class="item_right">
+        <div class="item_right" data-aos="fade-right">
             <img class="item_pic" src="./image/activity/wreath.jpg" alt="" />
             <div class="item_tr">
                 <div class="item_text">
@@ -65,7 +67,7 @@
         </div>
 
         <!-- 圖文內容_左 -->
-        <div class="item_left">
+        <div class="item_left" data-aos="fade-left">
             <img class="item_pic" src="./image/activity/fishing.jpeg" alt="" />
             <div class="item_tl">
                 <div class="item_text">
@@ -79,7 +81,7 @@
         </div>
 
         <!-- 圖文內容_右 -->
-        <div class="item_right">
+        <div class="item_right" data-aos="fade-right">
             <img class="item_pic" src="./image/activity/bike.jpeg" alt="" />
             <div class="item_tr">
                 <div class="item_text">
@@ -92,7 +94,7 @@
         </div>
 
         <!-- 圖文內容_左 -->
-        <div class="item_left">
+        <div class="item_left" data-aos="fade-left">
             <img class="item_pic" src="./image/activity/movie.jpg" alt="" />
             <div class="item_tl">
                 <div class="item_text">
@@ -137,6 +139,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- 滑入動畫套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
 </body>
 
 </html>
