@@ -9,10 +9,6 @@
     padding-top: 8rem;
 }
 
-/* #room_two{
-    background-color: #fff;
-} */
-
 /* --- 文字內容 --- */
 
 .room_text {
@@ -25,6 +21,11 @@
     font-weight: bolder;
 }
 
+/* --- 照片區塊 --- */
+
+/* .carousel-item img {
+    border-radius: 5px;
+} */
 
 /* --- 價目表 --- */
 
@@ -33,7 +34,7 @@
     table-layout: fixed;
     text-align: center;
     color: #6b705c;
-    border-color: #6b705c;
+    border-color: #6b705c; 
 }
 
 .room table thead {
@@ -175,7 +176,7 @@
     width: 60px;
     height: 60px;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 20px;
     line-height: 60px;
     color: #fff;
 }
