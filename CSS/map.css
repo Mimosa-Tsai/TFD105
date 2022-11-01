@@ -2,18 +2,11 @@
 .banner {
     width: 100%;
     height: 400px;
-    background-image: url("../image/big_pic/map_banner.jpeg");
+    background-image: url("../image/big_pic/map_banner.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
     margin-top: 4.6rem;
     margin-bottom: 5rem;
-    text-align: center;
-    line-height: 400px;
-    font-size: 3rem;
-    font-weight: bolder;
-    color: #000;
-    opacity: 0.6;
 }
 
 
